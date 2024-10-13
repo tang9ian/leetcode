@@ -4,15 +4,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-/*
- * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
- * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
- * Example:
- * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
- * Output: 7 -> 0 -> 8
- * Explanation: 342 + 465 = 807.
- */
-class Solution0002Test {
+public class Solution0002Test {
+
+    /**
+     * 2. Add Two Numbers You are given two non-empty linked lists representing two
+     * non-negative integers. The digits are stored in reverse order and each of
+     * their nodes contain a single digit. Add the two numbers and return it as a
+     * linked list. You may assume the two numbers do not contain any leading zero,
+     * except the number 0 itself.
+     * 
+     * Example: Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8
+     * Explanation: 342 + 465 = 807.
+     */
+
     private final Solution0002 s0002 = new Solution0002();
 
     @Test
@@ -68,7 +72,7 @@ class Solution0002Test {
         ListNode result = s0002.addTwoNumbers2(l1, l2);
 
         assertTrue(compareLists(result, expected));
-        
+
         // example 2
         // Input: l1 = [0], l2 = [0]
         // Output: [0]
